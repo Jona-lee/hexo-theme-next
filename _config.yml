@@ -89,13 +89,13 @@ index_with_subtitle: false
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
   home: / || home
-  #about: /about/ || user
   #tags: /tags/ || tags
-  #categories: /categories/ || th
+  categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  about: /about/ || user
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
@@ -343,12 +343,7 @@ font:
 mathjax:
   enable: false
   per_page: false
-  # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
-  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
-  #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-  # For automatic detect latest varsion link to MathJax.js and get from CloudFlare.
-  #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
@@ -684,10 +679,8 @@ motion:
     # Only for Pisces | Gemini.
     sidebar: slideUpIn
 
-# Fancybox. There is support for old version 2 and new version 3.
-# Please, choose only any one variant, do not need to install both.
-# For install 2.x: https://github.com/theme-next/theme-next-fancybox
-# For install 3.x: https://github.com/theme-next/theme-next-fancybox3
+# Fancybox
+# Dependencies: https://github.com/theme-next/theme-next-fancybox
 fancybox: false
 
 # Added switch option for separated repo in 6.0.0.
